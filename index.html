@@ -168,16 +168,12 @@ Además, siguiendo estas sencillas recetas, eliminarás automáticamente todos l
             
 
             <!-- HOTMART - Upsell Widget -->
-<div id="box_hotmart"></div>
-<script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
+<div id="hotmart-sales-funnel"></div>
 
+<!--- script load and setup --->
+<script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
 <script>
-opts = {
-key: 'USL-92730-270674-e4baef1c1fa08dd0fe5d41403009de97',
-width: '650' ,
-height: '420'
-};
-Upsell.Widget.show(opts);
+checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
 </script>
 
 <!-- HOTMART - Upsell Widget [end] -->
